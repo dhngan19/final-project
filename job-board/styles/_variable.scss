@@ -1,0 +1,23 @@
+
+$bg-color: #fff;
+$bg-white-color: #fff;
+$bg-gray-color: #ededf0;
+$text-color: #333333;
+$text-secondary-color: #7B7B7B;
+
+$mobile-breakpoint: 0;
+$tablet-breakpoint: 640;
+$laptop-breakpoint: 1024;
+$desktop-breakpoint: 1200;
+
+
+$xs-breakpoint: 0;
+$sm-breakpoint: 600;
+$md-breakpoint: 900;
+$lg-breakpoint: 1200;
+$xl-breakpoint: 1536;
+
+$information-mobile: "screen and (min-width : #{$mobile-breakpoint}px) and (max-width : #{$tablet-breakpoint - 1}px)";
+$information-tablet: "screen and (min-width : #{$tablet-breakpoint}px) and (max-width : #{$laptop-breakpoint - 1}px)";
+$information-laptop: "screen and (min-width : #{$laptop-breakpoint}px) and (max-width : #{$desktop-breakpoint - 1}px)";
+$information-desktop: "screen and (min-width : #{$desktop-breakpoint}px)";

@@ -1,0 +1,63 @@
+@import "./variable";
+
+.login {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  top: 88px;
+  left: 50%;
+  padding: 0 12px;
+  transform: translate(-50%, 0);
+
+  @media #{$information-mobile} {
+    top: 42px;
+  }
+  @media #{$information-tablet} {
+  }
+  @media #{$information-laptop} {
+  }
+  @media #{$information-desktop} {
+  }
+
+  &__container {
+    align-items: center;
+    gap: 20px;
+    max-width: 464px;
+
+    .form {
+      &__title {
+        background: #fff;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom: 1px solid #cccccc;
+        text-align: center;
+        width: 100%;
+
+        & > div {
+          margin: 18px 0;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 27px;
+        }
+      }
+
+      &__fields {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        &__wrapper {
+          max-width: 358px;
+          margin: 35px 53px;
+          @media #{$information-mobile} {
+            margin: 18px 24px;
+          }
+        }
+      }
+    }
+  }
+}
